@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #09090b;
+    --secondary: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary: #fafafa;
+        --secondary: #09090b;
+    }
+}
+
+body {
+    color: rgb(var(--primary));
+    background: var(--secondary);
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
