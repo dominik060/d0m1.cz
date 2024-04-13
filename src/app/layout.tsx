@@ -3,22 +3,22 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 
 export const metadata: Metadata = {
-    title: "Dominik B.",
+    title: "Dominik Bartuška",
     description: "Personal web of Dominik Bartuška",
-    icons: {
-        icon: [
-            {
-                media: "(prefers-color-scheme: light)",
-                url: "/images/icon-light.ico",
-                href: "/images/icon-light.ico",
-            },
-            {
-                media: "(prefers-color-scheme: dark)",
-                url: "/images/icon-dark.ico",
-                href: "/images/icon-dark.ico",
-            },
-        ],
-    },
+    icons: [
+        {
+            rel: "icon",
+            type: "image/x-icon",
+            url: "/favicon.ico",
+            media: "(prefers-color-scheme: light)",
+        },
+        {
+            rel: "icon",
+            type: "image/x-icon",
+            url: "/favicon-dark.ico",
+            media: "(prefers-color-scheme: dark)",
+        },
+    ],
 };
 
 export default function RootLayout({
