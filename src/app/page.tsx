@@ -1,7 +1,7 @@
 export default function Home() {
     return (
         <main className="m-0 grid place-content-center text-center min-h-screen">
-            <h1 className="text-landing dark:text-white text-black">
+            <h1 className="  text-black dark:text-white text-[10vw]">
                 I&apos;m working on it...
             </h1>
         </main>

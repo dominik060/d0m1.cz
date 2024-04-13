@@ -13,7 +13,6 @@ const config: Config = {
             h3: "24px",
             h4: "20px",
             p: "16px",
-            landing: "128px",
         },
         extend: {
             colors: {
