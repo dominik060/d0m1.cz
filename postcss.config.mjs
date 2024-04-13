@@ -5,6 +5,4 @@ const config = {
     },
 };
 
-// postcss.config.mjs
-// export default config;
-module.exports = config;
+export default config;
