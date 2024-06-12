@@ -19,6 +19,9 @@ const config: Config = {
                 black: "#09090B",
                 white: "#FAFAFA",
             },
+            fontFamily: {
+                sans: ["var(--font-geist-sans)"],
+            },
         },
     },
     plugins: [],
