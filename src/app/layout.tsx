@@ -28,8 +28,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="en">
-            <body className={GeistSans.className}>
+        <html lang="en" className={GeistSans.variable}>
+            <body className={"flex justify-center"}>
                 {children}
                 <SpeedInsights />
             </body>
