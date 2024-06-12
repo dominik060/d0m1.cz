@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
     title: "Dominik Bartuška",
@@ -28,7 +29,10 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={GeistSans.className}>{children}</body>
+            <body className={GeistSans.className}>
+                {children}
+                <SpeedInsights />
+            </body>
         </html>
     );
 }
