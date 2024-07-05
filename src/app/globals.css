@@ -3,29 +3,29 @@
 @tailwind utilities;
 
 :root {
-    --primary: #09090b;
-    --secondary: #fafafa;
+  --primary: #09090b;
+  --secondary: #fafafa;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --primary: #fafafa;
-        --secondary: #09090b;
-    }
+  :root {
+    --primary: #fafafa;
+    --secondary: #09090b;
+  }
 }
 
 body {
-    color: rgb(var(--primary));
-    background: var(--secondary);
+  color: rgb(var(--primary));
+  background: var(--secondary);
 }
 
 @layer utilities {
-    .text-balance {
-        text-wrap: balance;
-    }
+  .text-balance {
+    text-wrap: balance;
+  }
 }
