@@ -12,14 +12,14 @@ export default function NavBar({ ClassName, ...props }: Props) {
     return (
         <nav
             {...props}
-            className="py-8 px-16 flex justify-between items-center"
+            className="flex items-center justify-between px-16 py-8"
         >
             <Link href="/" title="Přejít na domovskou stránku" className="">
                 <Logo className="w-16" aria-hidden="true" />
             </Link>
-            <div className="flex items-center ">
+            <div className="flex items-center">
                 <NavLinks
-                    className="text-h3 flex flex-nowrap gap-8 "
+                    className="flex flex-nowrap gap-8 text-h3"
                     navLinkList={[
                         { name: "Work", href: "#work" },
                         { name: "About", href: "#about" },
@@ -27,7 +27,7 @@ export default function NavBar({ ClassName, ...props }: Props) {
                     ]}
                 />
             </div>
-            <div className="theme-switcher"></div>
+            {/* <div className="theme-switcher"></div> */}
         </nav>
     ); // TODO theme-switcher
 }
