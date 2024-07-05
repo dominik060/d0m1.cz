@@ -3,15 +3,27 @@ import NavBar from "@/components/NavBar";
 
 export default function Home() {
     return (
-        <main className="flex col items-center text-left min-h-screen overflow-hidden w-screen">
-            <div className="w-full max-w-[80rem] min-h-screen mx-auto border-x-2  border-current flex gap-0 flex-col text-black dark:text-white ">
+        <main
+            className={`
+              flex col min-h-screen w-screen items-center overflow-hidden
+              text-left
+            `}
+        >
+            <div
+                className={`
+                  mx-auto flex min-h-screen w-full max-w-[80rem] flex-col gap-0
+                  border-x-2 border-current text-black
+
+                  dark:text-white
+                `}
+            >
                 <header>
                     <NavBar />
                 </header>
 
                 <HrFullWidth />
 
-                <p className="px-8 py-32 overflow-hidden ">
+                <p className="overflow-hidden px-8 py-32">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
                     ipsum atque quod rem facere placeat, aliquam pariatur
                     quisquam iure! Itaque accusamus recusandae, quasi eligendi
@@ -25,7 +37,7 @@ export default function Home() {
 
                 <HrFullWidth />
 
-                <div className="px-4 overflow-hidden max-w-full ">
+                <div className="max-w-full overflow-hidden px-4">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id
                     ipsum atque quod rem facere placeat, aliquam pariatur
                     quisquam iure! Itaque accusamus recusandae, quasi eligendi
