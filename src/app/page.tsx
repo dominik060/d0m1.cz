@@ -1,5 +1,5 @@
 import HrFullWidth from "@/components/HrFullWidth";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/navbar/NavBar";
 
 export default function Home() {
     return (
