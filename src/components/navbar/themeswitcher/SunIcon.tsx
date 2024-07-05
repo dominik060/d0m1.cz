@@ -1,8 +1,9 @@
 type Props = {
   className?: string;
+  active: boolean;
 };
 
-export default function SunIcon({ className }: Props) {
+export default function SunIcon({ className, active }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -14,7 +15,7 @@ export default function SunIcon({ className }: Props) {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      className={className}
+      className={active ? className + " text-white dark:text-black" : className}
     >
       <circle cx="12" cy="12" r="5"></circle>
       <line x1="12" y1="1" x2="12" y2="3"></line>
