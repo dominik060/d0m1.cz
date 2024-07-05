@@ -14,6 +14,7 @@ const config: Config = {
             h4: "20px",
             p: "16px",
         },
+
         extend: {
             colors: {
                 black: "#09090B",
@@ -21,6 +22,9 @@ const config: Config = {
             },
             fontFamily: {
                 sans: ["var(--font-geist-sans)"],
+            },
+            screens: {
+                "80rem": "80rem",
             },
         },
     },
