@@ -11,13 +11,12 @@ export default function Logo({ className, props }: Props) {
       version="1.1"
       id="svg1"
       xmlns="http://www.w3.org/2000/svg"
-      className={"w-16 bg-red-50 " + className}
+      className={"w-16 " + className}
       {...props}
     >
       <title id="title1">logo-db</title>
 
-      <defs id="defs1" />
-      <g id="layer1" className="w-16 bg-red-50 fill-current">
+      <g id="layer1" className="w-16 fill-current">
         <path
           id="path11"
           // style="fill:#09090b;fill-opacity:1;stroke-width:0.461937"
