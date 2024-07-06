@@ -1,7 +1,9 @@
+import { MouseEventHandler } from "react";
+
 type Props = {
   className?: string;
   active: boolean;
-  onClick: any;
+  onClick: MouseEventHandler<SVGSVGElement>;
 };
 
 export default function MoonIcon({ className, active, onClick }: Props) {
