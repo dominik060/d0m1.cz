@@ -2,8 +2,8 @@ import { MouseEventHandler } from "react";
 
 type Props = {
   className?: string;
-  active: boolean;
-  onClick: MouseEventHandler<SVGSVGElement>;
+  active?: boolean;
+  onClick?: MouseEventHandler<SVGSVGElement>;
 };
 
 export default function MonitorIcon({ className, active, onClick }: Props) {
