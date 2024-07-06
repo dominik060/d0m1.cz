@@ -15,77 +15,76 @@ const iconOnHover: string =
 
 export default function ThemeSwitcher({ className }: Props) {
   const [mounted, setMounted] = useState(false);
-  const { setTheme, resolvedTheme } = useTheme();
+  const { setTheme, theme } = useTheme();
   const [rectPosition, setRectPosition] = useState("left-0");
-  const [themePreference, setThemePreference] = useState(resolvedTheme);
 
   useEffect(() => {
-    setThemePreference(resolvedTheme);
+    changeRectPosition();
     setMounted(true);
   }, []);
 
-  useEffect(() => {
-    switch (themePreference) {
+  function changeRectPosition() {
+    switch (theme) {
       case "light": {
-        setTheme("light");
         setRectPosition("left-7");
         break;
       }
       case "dark": {
-        setTheme("dark");
         setRectPosition("left-14");
         break;
       }
       default: {
-        setTheme("system");
         setRectPosition("left-0");
         break;
       }
     }
-  }, [themePreference]);
+  }
+
+  useEffect(() => {
+    changeRectPosition();
+  }, [theme]);
 
   return (
     <div className="relative rounded-md border-2 border-current">
       {mounted ? (
-        <div className="flex gap-2 px-1 py-1">
-          <MonitorIcon
-            className={iconOnHover}
-            active={themePreference == "system" ? true : false}
-            onClick={() => {
-              setThemePreference("system");
-              console.log(resolvedTheme);
-            }}
-          />
-          <SunIcon
-            className={iconOnHover}
-            active={themePreference == "light" ? true : false}
-            onClick={() => {
-              setThemePreference("light");
-              console.log(resolvedTheme);
-            }}
-          />
-          <MoonIcon
-            className={iconOnHover}
-            active={themePreference == "dark" ? true : false}
-            onClick={() => {
-              setThemePreference("dark");
-              console.log(resolvedTheme);
-            }}
-          />
-        </div>
+        <>
+          <div className="flex gap-2 px-1 py-1">
+            <MonitorIcon
+              className={iconOnHover}
+              active={theme == "system" ? true : false}
+              onClick={() => {
+                setTheme("system");
+              }}
+            />
+            <SunIcon
+              className={iconOnHover}
+              active={theme == "light" ? true : false}
+              onClick={() => {
+                setTheme("light");
+              }}
+            />
+            <MoonIcon
+              className={iconOnHover}
+              active={theme == "dark" ? true : false}
+              onClick={() => {
+                setTheme("dark");
+              }}
+            />
+          </div>
+          <div
+            className={
+              "absolute top-0 h-7 w-7 rounded-sm bg-black transition-all duration-300 dark:bg-white" +
+              ` ${rectPosition}`
+            }
+          ></div>
+        </>
       ) : (
         <div className="flex gap-2 px-1 py-1">
-          <MonitorIcon className={iconOnHover} active={true} />
+          <MonitorIcon className={iconOnHover} />
           <SunIcon className={iconOnHover} />
           <MoonIcon className={iconOnHover} />
         </div>
       )}
-      <div
-        className={
-          "absolute top-0 h-7 w-7 rounded-sm bg-black transition-all duration-300 dark:bg-white" +
-          ` ${rectPosition}`
-        }
-      ></div>
     </div>
   );
 }
