@@ -12,6 +12,10 @@
   padding: 0;
 }
 
+html {
+  color-scheme: light dark;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #fafafa;
