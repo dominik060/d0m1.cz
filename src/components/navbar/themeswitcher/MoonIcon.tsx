@@ -1,9 +1,10 @@
 type Props = {
   className?: string;
   active: boolean;
+  onClick: any;
 };
 
-export default function MoonIcon({ className, active }: Props) {
+export default function MoonIcon({ className, active, onClick }: Props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -16,6 +17,7 @@ export default function MoonIcon({ className, active }: Props) {
       stroke-linecap="round"
       stroke-linejoin="round"
       className={active ? className + " text-white dark:text-black" : className}
+      onClick={onClick}
     >
       <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
     </svg>

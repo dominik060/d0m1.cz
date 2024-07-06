@@ -3,8 +3,8 @@ import HrFullWidth from "@/components/HrFullWidth";
 
 export default function Home() {
   return (
-    <main className="col flex min-h-screen w-screen items-center overflow-hidden text-left">
-      <div className="mx-auto flex min-h-screen w-full max-w-[80rem] flex-col gap-0 border-x-2 border-current text-black dark:text-white">
+    <main className="col flex min-h-screen w-screen items-center overflow-hidden bg-white text-left dark:bg-black">
+      <div className="mx-auto flex min-h-screen w-full max-w-[80rem] flex-col gap-0 border-x-2 border-current text-current">
         <Header />
 
         <HrFullWidth />
