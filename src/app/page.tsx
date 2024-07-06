@@ -1,13 +1,11 @@
+import Header from "@/components/Header";
 import HrFullWidth from "@/components/HrFullWidth";
-import NavBar from "@/components/navbar/NavBar";
 
 export default function Home() {
   return (
     <main className="col flex min-h-screen w-screen items-center overflow-hidden text-left">
       <div className="mx-auto flex min-h-screen w-full max-w-[80rem] flex-col gap-0 border-x-2 border-current text-black dark:text-white">
-        <header>
-          <NavBar />
-        </header>
+        <Header />
 
         <HrFullWidth />
 
