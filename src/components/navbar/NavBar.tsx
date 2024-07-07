@@ -16,7 +16,7 @@ export default function NavBar({ className, ...props }: Props) {
       </Link>
       <div className="flex flex-wrap items-center gap-8">
         <NavLinks
-          className="flex flex-nowrap gap-8 text-h3"
+          className="flex flex-nowrap gap-8 text-h4"
           navLinkList={[
             { name: "Work", href: "#work" },
             { name: "About", href: "#about" },
