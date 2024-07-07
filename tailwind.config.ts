@@ -19,8 +19,6 @@ const config: Config = {
       colors: {
         black: "#09090B",
         white: "#FAFAFA",
-        "gradient-apple":
-          "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
