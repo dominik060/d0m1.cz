@@ -14,7 +14,7 @@ export default function NavBar({ className, ...props }: Props) {
       <Link href="/" title="Přejít na domovskou stránku" className="">
         <Logo className="w-16" aria-hidden="true" />
       </Link>
-      <div className="flex flex-wrap items-center gap-8">
+      <div className="flex flex-wrap items-center justify-end gap-8">
         <NavLinks
           className="flex flex-nowrap gap-8 text-h4"
           navLinkList={[
