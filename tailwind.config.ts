@@ -13,8 +13,16 @@ const config: Config = {
       h3: "24px",
       h4: "20px",
       p: "16px",
-      hero: "96px",
+      hero: "72px",
     },
+    screens: {
+      sm: { min: "480px" },
+      md: { min: "768px" },
+      lg: { min: "976px" },
+      xl: { min: "1660px" },
+      "hr-line": "80rem",
+    },
+
     extend: {
       colors: {
         black: "#09090B",
