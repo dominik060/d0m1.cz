@@ -13,5 +13,15 @@ export default function ContactCard({
   title,
   description,
 }: Props) {
-  return <Card>contact card</Card>;
+  return (
+    <Card className="flex flex-col items-center">
+      <div>
+        <Icon.type />
+      </div>
+      <div>
+        <h3>{title}</h3>
+      </div>
+      <div>{description}</div>
+    </Card>
+  );
 }
