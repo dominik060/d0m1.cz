@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HrFullWidth from "@/components/HrFullWidth";
@@ -12,16 +13,7 @@ export default function Home() {
 
         <HrFullWidth />
 
-        <p className="overflow-hidden px-8 py-32">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id ipsum
-          atque quod rem facere placeat, aliquam pariatur quisquam iure! Itaque
-          accusamus recusandae, quasi eligendi repellat animi voluptatibus
-          repellendus voluptatum doloribus? Adipisci nemo, ratione eos provident
-          quia, voluptatibus odio sequi excepturi minima laudantium quos? Ex
-          itaque esse sed, incidunt amet quod nihil repudiandae dolores
-          quibusdam accusantium vero consectetur quisquam qui labore. Quo
-          veritatis autem, non nam, deleniti eum et
-        </p>
+        <AboutMe />
 
         <HrFullWidth />
 
