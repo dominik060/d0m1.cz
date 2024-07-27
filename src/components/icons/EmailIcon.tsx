@@ -7,6 +7,7 @@ export default function EmailIcon({ className }: { className?: string }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      stroke="currentColor"
     >
       <path
         d="M26.667 5.3335H5.33366C3.8609 5.3335 2.66699 6.5274 2.66699 8.00016V24.0002C2.66699 25.4729 3.8609 26.6668 5.33366 26.6668H26.667C28.1397 26.6668 29.3337 25.4729 29.3337 24.0002V8.00016C29.3337 6.5274 28.1397 5.3335 26.667 5.3335Z"
