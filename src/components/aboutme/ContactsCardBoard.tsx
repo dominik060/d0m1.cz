@@ -19,7 +19,7 @@ const contactsList = [
 
 export default function ContactsCardBoard() {
   return (
-    <div className="flex flex-wrap justify-evenly gap-4 px-8">
+    <div className="flex flex-col flex-wrap justify-evenly gap-4 px-8 sm:flex-row">
       {contactsList &&
         contactsList.map((contact) => (
           <ContactCard

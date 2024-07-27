@@ -8,8 +8,8 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: { min: "480px" },
-      md: { min: "768px" },
+      sm: { min: "515px" },
+      md: { min: "718px" },
       lg: { min: "976px" },
       xl: { min: "1660px" },
       "hr-line": "80rem",

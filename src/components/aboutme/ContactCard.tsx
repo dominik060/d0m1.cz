@@ -19,7 +19,7 @@ export default function ContactCard({
 }: Props) {
   return (
     <Link href={link} target="_blank">
-      <Card className="group relative flex min-w-52 flex-col items-center gap-8 pb-16 pt-8 [&>*]:duration-500">
+      <Card className="group relative flex min-w-full flex-col items-center gap-8 pb-6 pt-8 sm:min-w-52 sm:pb-16 [&>*]:duration-500">
         <div className="bg- z-50 rounded-full border border-black border-opacity-40 bg-white p-4 group-hover:border-current dark:border-white dark:border-opacity-40 dark:bg-black">
           <Icon.type />
         </div>
