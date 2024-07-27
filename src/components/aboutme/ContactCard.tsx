@@ -14,14 +14,15 @@ export default function ContactCard({
   description,
 }: Props) {
   return (
-    <Card className="flex flex-col items-center">
-      <div>
+    <Card className="group relative flex min-w-52 flex-col items-center gap-8 pb-16 pt-8">
+      <div className="bg- z-50 rounded-full border border-black border-opacity-40 bg-white p-4 dark:border-white dark:border-opacity-40 dark:bg-black">
         <Icon.type />
       </div>
-      <div>
-        <h3>{title}</h3>
+      <span className="via-current/50 absolute h-3/4 w-px bg-gradient-to-b from-current to-transparent"></span>
+      <div className="flex flex-col gap-3 text-center">
+        <h3 className="font-bold">{title}</h3>
+        <h4 className="text-white/50">{description}</h4>
       </div>
-      <div>{description}</div>
     </Card>
   );
 }
