@@ -1,4 +1,4 @@
-import AboutMe from "@/components/AboutMe";
+import AboutMe from "@/components/aboutme/AboutMe";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HrFullWidth from "@/components/HrFullWidth";
