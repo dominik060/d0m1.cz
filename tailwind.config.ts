@@ -7,14 +7,6 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontSize: {
-      h1: "48px",
-      h2: "30px",
-      h3: "24px",
-      h4: "20px",
-      p: "16px",
-      hero: "72px",
-    },
     screens: {
       sm: { min: "480px" },
       md: { min: "768px" },
@@ -30,6 +22,14 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
+      },
+      fontSize: {
+        h1: "48px",
+        h2: "30px",
+        h3: "24px",
+        h4: "20px",
+        p: "16px",
+        hero: "72px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
