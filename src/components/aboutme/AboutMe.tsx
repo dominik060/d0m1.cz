@@ -1,4 +1,5 @@
 import AboutMeTitle from "./AboutMeTitle";
+import ContactsCardBoard from "./ContactsCardBoard";
 
 type Props = {
   className?: string;
@@ -7,7 +8,8 @@ type Props = {
 export default function AboutMe({ className }: Props) {
   return (
     <div className="my-24 flex flex-col justify-center">
-      <AboutMeTitle />
+      <AboutMeTitle className="mb-8" />
+      <ContactsCardBoard />
     </div>
   );
 }
