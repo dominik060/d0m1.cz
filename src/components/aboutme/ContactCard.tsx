@@ -2,14 +2,14 @@ import Card from "../Card";
 
 type Props = {
   className?: string;
-  icon: any;
+  Icon: React.ReactElement;
   title: string;
   description: string;
 };
 
 export default function ContactCard({
   className,
-  icon,
+  Icon,
   title,
   description,
 }: Props) {
