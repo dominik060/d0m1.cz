@@ -40,7 +40,7 @@ const config: Config = {
         "gradient-hero-dark":
           "linear-gradient(90deg, #FAFAFA 0%, #EBEBEB 26%, #3AB6FF 79%, #226BB8 100%)",
         "gradient-hero-light":
-          "linear-gradient(43deg, #09090B 0%, #202026 26%, #3AB6FF 79%, #226BB8 100%)",
+          "linear-gradient(90deg, #09090B 0%, #09090B 19%, #226BB8 59%, #3AB6FF 100%)",
       },
     },
   },
