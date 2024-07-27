@@ -1,4 +1,4 @@
-export default function EmailIcon({ className }: { className?: string }) {
+export default function EmailIcon() {
   return (
     <svg
       width="32"
@@ -6,7 +6,6 @@ export default function EmailIcon({ className }: { className?: string }) {
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
       stroke="currentColor"
     >
       <path
