@@ -3,20 +3,13 @@ import Card from "../Card";
 import { Url } from "next/dist/shared/lib/router/router";
 
 type Props = {
-  className?: string;
   Icon: React.ReactElement;
   title: string;
   description: string;
   link: Url;
 };
 
-export default function ContactCard({
-  className,
-  Icon,
-  title,
-  description,
-  link,
-}: Props) {
+export default function ContactCard({ Icon, title, description, link }: Props) {
   return (
     <Link href={link} target="_blank">
       <Card className="group relative flex w-full flex-col items-center gap-8 pb-6 pt-8 sm:min-w-52 sm:pb-16 md:min-w-72 lg:min-w-96 [&>*]:duration-500">
