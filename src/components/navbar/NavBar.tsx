@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "../Logo";
+import Logo from "../svg/Logo";
 import NavLinks from "./NavLink";
 import ThemeSwitcher from "./themeswitcher/ThemeSwitcher";
 
