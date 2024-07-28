@@ -1,25 +1,22 @@
 {
-    "folders": [{ "path": ".", "name": "d0m1.cz" }],
-    "settings": {
-        "files.autoSave": "onFocusChange",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": "always"
-        },
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "[svg]": {
-            "editor.defaultFormatter": "jock.svg"
-        },
-        "tailwindCSS.experimental.classRegex": [
-            ["tv\\({([^;]*)}\\);", "\"([^\"]*)\""],
-            ["tv\\({([^;]*)}\\);", "'([^']*)'"],
-            ["tv\\({([^;]*)}\\);", "\\`([^\\`]*)\\`"]
-        ]
+  "folders": [{ "path": ".", "name": "d0m1.cz" }],
+  "settings": {
+    "files.autoSave": "onFocusChange",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "always",
     },
-    "extensions": {
-        "recommendations": [
-            "esbenp.prettier-vscode",
-            "bradlc.vscode-tailwindcss"
-        ]
-    }
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[svg]": {
+      "editor.defaultFormatter": "jock.svg",
+    },
+    "tailwindCSS.experimental.classRegex": [
+      ["tv\\({([^;]*)}\\);", "\"([^\"]*)\""],
+      ["tv\\({([^;]*)}\\);", "'([^']*)'"],
+      ["tv\\({([^;]*)}\\);", "\\`([^\\`]*)\\`"],
+    ],
+  },
+  "extensions": {
+    "recommendations": ["esbenp.prettier-vscode", "bradlc.vscode-tailwindcss"],
+  },
 }
