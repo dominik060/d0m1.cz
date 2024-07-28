@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     creator: "@DominikBartuska",
     description: "Personal website of Dominik Bartuška",
     title: "d0m1.cz",
+    images: "/twitter-preview.png",
   },
   keywords: [
     "dominik bartuska",
