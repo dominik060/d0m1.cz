@@ -14,7 +14,7 @@ export default function NavLinks({ navLinkList, className }: Props) {
   return (
     <div className={className}>
       {navLinkList.map(({ name, href }) => (
-        <Link key={href} href={href}>
+        <Link key={href} href={href} title={"Move to " + href}>
           {name}
         </Link>
       ))}
