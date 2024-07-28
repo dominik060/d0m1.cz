@@ -15,7 +15,7 @@ export default function NavBar({ className, ...props }: Props) {
       className="flex items-center justify-between px-8 py-4 sm:px-16 sm:py-8"
     >
       <Link href="/" title="Move to home page" className="">
-        <Logo className="w-16" aria-hidden="true" />
+        <Logo className="w-12 sm:w-16" aria-hidden="true" />
       </Link>
       <div className="flex flex-wrap items-center justify-end gap-6 sm:gap-8">
         <NavLinks
