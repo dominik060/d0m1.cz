@@ -11,7 +11,7 @@ type Props = {
 export default function NavBar({ className, ...props }: Props) {
   return (
     <nav {...props} className="flex items-center justify-between px-16 py-8">
-      <Link href="/" title="Přejít na domovskou stránku" className="">
+      <Link href="/" title="Move to home page" className="">
         <Logo className="w-16" aria-hidden="true" />
       </Link>
       <div className="flex flex-wrap items-center justify-end gap-8">
