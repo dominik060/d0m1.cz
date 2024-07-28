@@ -1,5 +1,5 @@
-import EmailIcon from "../icons/EmailIcon";
-import GitHubIcon from "../icons/GitHubIcon";
+import EmailIcon from "../svg/EmailIcon";
+import GitHubIcon from "../svg/GitHubIcon";
 import ContactCard from "./ContactCard";
 
 const contactsList = [
