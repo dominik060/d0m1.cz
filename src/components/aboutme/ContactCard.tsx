@@ -11,7 +11,7 @@ type Props = {
 
 export default function ContactCard({ Icon, title, description, link }: Props) {
   return (
-    <Link href={link} target="_blank">
+    <Link href={link} target="_blank" title="Open contact link">
       <Card className="group relative flex w-full flex-col items-center gap-8 pb-6 pt-8 sm:min-w-52 sm:pb-16 md:min-w-72 lg:min-w-96 [&>*]:duration-500">
         <div className="bg- z-50 rounded-full border border-black border-opacity-40 bg-white p-4 group-hover:border-current dark:border-white dark:border-opacity-40 dark:bg-black">
           <Icon.type />
