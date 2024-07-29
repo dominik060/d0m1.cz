@@ -17,8 +17,31 @@ export const metadata: Metadata = {
     site: "https://d0m1.cz",
     creator: "@DominikBartuska",
     description: "Personal website of Dominik Bartuška",
-    title: "d0m1.cz",
-    images: "/twitter-preview.png",
+    title: "Dominik Bartuška",
+    images: [
+      {
+        url: "v/twitter-preview.png",
+        width: 1440,
+        height: 900,
+        alt: "Personal website of Dominik Bartuška",
+      },
+    ],
+  },
+  openGraph: {
+    title: "Dominik Bartuška",
+    description: "Personal website of Dominik Bartuška",
+    siteName: "Dominik Bartuška",
+    url: "https://d0m1.cz",
+    images: [
+      {
+        url: "https://d0m1.cz/twitter-preview.png",
+        width: 1440,
+        height: 900,
+        alt: "Personal website of Dominik Bartuška",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
   },
   keywords: [
     "dominik bartuska",
