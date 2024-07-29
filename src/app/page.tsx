@@ -1,9 +1,20 @@
+import AboutMe from "@/components/aboutme/AboutMe";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import HrFullWidth from "@/components/HrFullWidth";
+
 export default function Home() {
-    return (
-        <main className="m-0 grid place-content-center text-center min-h-screen">
-            <h1 className="  text-black dark:text-white text-[10vw]">
-                I&apos;m working on it...
-            </h1>
-        </main>
-    );
+  return (
+    <main className="col flex min-h-screen w-screen items-center overflow-hidden bg-white text-left dark:bg-black">
+      <div className="mx-auto flex min-h-screen w-full max-w-[80rem] flex-col gap-0 border-x-2 border-none border-current text-current hr-line:border-solid">
+        <Header className="h-[69vh] sm:h-[90vh]">
+          <Hero />
+        </Header>
+        <HrFullWidth />
+        <section id="contact">
+          <AboutMe />
+        </section>
+      </div>
+    </main>
+  );
 }
