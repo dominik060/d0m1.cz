@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Dominik Bartuška", url: "https://d0m1.cz" }],
   generator: "Next.js",
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     site: "https://d0m1.cz",
     creator: "@DominikBartuska",
     description: "Personal website of Dominik Bartuška",
