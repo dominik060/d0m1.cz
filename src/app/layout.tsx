@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Dominik Bartuška",
     images: [
       {
-        url: "v/twitter-preview.png",
+        url: "https://d0m1.cz/twitter-preview.png",
         width: 1440,
         height: 900,
         alt: "Personal website of Dominik Bartuška",
