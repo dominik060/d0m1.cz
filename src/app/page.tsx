@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="col flex min-h-screen w-screen items-center overflow-hidden bg-white text-left dark:bg-black">
       <div className="mx-auto flex min-h-screen w-full max-w-[80rem] flex-col gap-0 border-x-2 border-none border-current text-current hr-line:border-solid">
-        <Header className="h-[90vh]">
+        <Header className="h-[69vh] sm:h-[90vh]">
           <Hero />
         </Header>
         <HrFullWidth />
