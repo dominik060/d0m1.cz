@@ -27,6 +27,7 @@ export default function ContactsCardBoard() {
             title={contact.title}
             description={contact.description}
             link={contact.link}
+            key={contact.link}
           />
         ))}
     </div>
