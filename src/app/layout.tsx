@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "./providers";
@@ -64,79 +64,79 @@ export const metadata: Metadata = {
     {
       rel: "icon",
       type: "image/x-icon",
-      url: "favicons/favicon.ico",
+      url: "/favicon.ico",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
       type: "image/x-icon",
-      url: "favicons/favicon-dark.ico",
+      url: "/favicon-dark.ico",
       media: "(prefers-color-scheme: dark)",
     },
     {
       rel: "icon",
       type: "image/x-icon",
       sizes: "96x96",
-      url: "favicons/favicon-96x96.ico",
+      url: "/favicon-96x96.ico",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
       type: "image/x-icon",
       sizes: "96x96",
-      url: "favicons/favicon-96x96-dark.ico",
+      url: "/favicon-96x96-dark.ico",
       media: "(prefers-color-scheme: dark)",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "32x32",
-      url: "favicons/favicon-32x32.png",
+      url: "/favicon-32x32.png",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "32x32",
-      url: "favicons/favicon-32x32-dark.png",
+      url: "/favicon-32x32-dark.png",
       media: "(prefers-color-scheme: dark)",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "16x16",
-      url: "favicons/favicon-16x16.png",
+      url: "/favicon-16x16.png",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
       type: "image/png",
       sizes: "16x16",
-      url: "favicons/favicon-16x16-dark.png",
+      url: "/favicon-16x16-dark.png",
       media: "(prefers-color-scheme: dark)",
     },
     {
       rel: "apple-touch-icon",
       sizes: "180x180",
-      url: "favicons/apple-touch-icon.png",
+      url: "/apple-touch-icon.png",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "apple-touch-icon",
       sizes: "180x180",
-      url: "favicons/apple-touch-icon-dark.png",
+      url: "/apple-touch-icon-dark.png",
       media: "(prefers-color-scheme: dark)",
     },
     {
       rel: "shortcut icon",
       type: "image/png",
-      url: "favicons/apple-touch-icon.png",
+      url: "/apple-touch-icon.png",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "shortcut icon",
       type: "image/png",
-      url: "favicons/apple-touch-icon-dark.png",
+      url: "/apple-touch-icon-dark.png",
       media: "(prefers-color-scheme: dark)",
     },
   ],
