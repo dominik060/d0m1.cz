@@ -126,7 +126,6 @@ export const metadata: Metadata = {
       media: "(prefers-color-scheme: dark)",
     },
   ],
-  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {
