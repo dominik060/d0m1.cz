@@ -4,11 +4,11 @@ import { GeistSans } from "geist/font/sans";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "./providers";
 import type { Viewport } from "next";
-import { url } from "inspector";
 
 export const metadata: Metadata = {
   title: "Dominik Bartuška",
   description: "Personal website of Dominik Bartuška",
+  metadataBase: new URL("https://d0m1.cz"),
   creator: "Dominik Bartuška",
   publisher: "Dominik Bartuška",
   authors: [{ name: "Dominik Bartuška", url: "https://d0m1.cz" }],
