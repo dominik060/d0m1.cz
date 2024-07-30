@@ -60,6 +60,7 @@ export const metadata: Metadata = {
   applicationName: "Dominik Bartuška's Website",
   referrer: "origin-when-cross-origin",
   icons: { icon: "/favicon.ico", apple: "/apple-icon.png" },
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {
