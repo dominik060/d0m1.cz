@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "./providers";
@@ -8,6 +8,7 @@ import type { Viewport } from "next";
 export const metadata: Metadata = {
   title: "Dominik Bartuška",
   description: "Personal website of Dominik Bartuška",
+  metadataBase: new URL("https://d0m1.cz"),
   creator: "Dominik Bartuška",
   publisher: "Dominik Bartuška",
   authors: [{ name: "Dominik Bartuška", url: "https://d0m1.cz" }],
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     title: "Dominik Bartuška",
     images: [
       {
-        url: "https://d0m1.cz/twitter-preview.png",
+        url: "images/twitter-preview.png",
         width: 1440,
         height: 900,
         alt: "Personal website of Dominik Bartuška",
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://d0m1.cz",
     images: [
       {
-        url: "https://d0m1.cz/twitter-preview.png",
+        url: "images/twitter-preview.png",
         width: 1440,
         height: 900,
         alt: "Personal website of Dominik Bartuška",
@@ -72,6 +73,72 @@ export const metadata: Metadata = {
       url: "/favicon-dark.ico",
       media: "(prefers-color-scheme: dark)",
     },
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      sizes: "96x96",
+      url: "/favicon-96x96.ico",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      sizes: "96x96",
+      url: "/favicon-96x96-dark.ico",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon-32x32.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon-32x32-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon-16x16.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon-16x16-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      url: "/apple-touch-icon.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      url: "/apple-touch-icon-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      rel: "shortcut icon",
+      type: "image/png",
+      url: "/apple-touch-icon.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "shortcut icon",
+      type: "image/png",
+      url: "/apple-touch-icon-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
   ],
 };
 
@@ -80,6 +147,11 @@ export const viewport: Viewport = {
     { media: "(prefers-color-scheme: light)", color: "#FAFAFA" },
     { media: "(prefers-color-scheme: dark)", color: "#09090B" },
   ],
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  interactiveWidget: "resizes-visual",
 };
 
 export default function RootLayout({
