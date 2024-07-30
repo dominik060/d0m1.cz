@@ -59,20 +59,7 @@ export const metadata: Metadata = {
   ],
   applicationName: "Dominik Bartuška's Website",
   referrer: "origin-when-cross-origin",
-  icons: [
-    {
-      rel: "icon",
-      type: "image/x-icon",
-      url: "/favicon.ico",
-      media: "(prefers-color-scheme: light)",
-    },
-    {
-      rel: "icon",
-      type: "image/x-icon",
-      url: "/favicon-dark.ico",
-      media: "(prefers-color-scheme: dark)",
-    },
-  ],
+  icons: { icon: "/favicon.ico", apple: "/apple-icon.png" },
 };
 
 export const viewport: Viewport = {
