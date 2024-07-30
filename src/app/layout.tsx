@@ -83,16 +83,16 @@ export const metadata: Metadata = {
     {
       rel: "icon",
       type: "image/png",
-      sizes: "16x16",
-      url: "/favicon-16x16.png",
-      media: "(prefers-color-scheme: light)",
+      sizes: "32x32",
+      url: "/favicon-32x32-dark.png",
+      media: "(prefers-color-scheme: dark)",
     },
     {
       rel: "icon",
       type: "image/png",
-      sizes: "32x32",
-      url: "/favicon-32x32-dark.png",
-      media: "(prefers-color-scheme: dark)",
+      sizes: "16x16",
+      url: "/favicon-16x16.png",
+      media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
