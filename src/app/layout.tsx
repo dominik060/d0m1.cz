@@ -4,6 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "./providers";
 import type { Viewport } from "next";
+import { url } from "inspector";
 
 export const metadata: Metadata = {
   title: "Dominik Bartuška",
@@ -59,7 +60,72 @@ export const metadata: Metadata = {
   ],
   applicationName: "Dominik Bartuška's Website",
   referrer: "origin-when-cross-origin",
-  icons: { icon: "/favicon.ico", apple: "/apple-icon.png" },
+  icons: [
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      url: "/favicon.ico",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "icon",
+      type: "image/x-icon",
+      url: "/favicon-dark.ico",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon-32x32.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon-16x16.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/favicon-32x32-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon-16x16-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      url: "/apple-touch-icon.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      url: "/apple-touch-icon-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+    {
+      rel: "shortcut icon",
+      type: "image/png",
+      url: "/apple-touch-icon.png",
+      media: "(prefers-color-scheme: light)",
+    },
+    {
+      rel: "shortcut icon",
+      type: "image/png",
+      url: "/apple-touch-icon-dark.png",
+      media: "(prefers-color-scheme: dark)",
+    },
+  ],
   manifest: "/site.webmanifest",
 };
 
