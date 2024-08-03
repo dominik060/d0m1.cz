@@ -5,13 +5,11 @@ export default function AboutMeParagraph({
 }) {
   return (
     <div className={className}>
-      <p className="text-base">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste qui
-        perferendis, provident dicta voluptas debitis culpa commodi modi, illo
-        aspernatur similique ex molestias accusantium, repudiandae ab. Debitis
-        pariatur sunt officia magnam. Facilis debitis ab qui velit voluptatum
-        quam at! Expedita praesentium unde sequi ex quibusdam modi nostrum
-        consequuntur nemo quisquam!
+      <p className="text-center text-base">
+        I'm student from Czechia, I make websites, develop android apps, fly fpv
+        drones and do some photography.
+        <br />
+        You can contact me via email and look at some of my work on GitHub.
       </p>
     </div>
   );
