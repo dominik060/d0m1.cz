@@ -10,10 +10,7 @@ type Props = {
 
 export default function NavBar({ className, ...props }: Props) {
   return (
-    <nav
-      {...props}
-      className="flex items-center justify-between px-8 py-4 sm:px-16 sm:py-8"
-    >
+    <nav {...props} className="flex items-center justify-between py-4 sm:py-8">
       <Link href="/" title="Move to home page" className="">
         <Logo className="w-11 sm:w-16" aria-hidden="true" />
       </Link>
