@@ -65,12 +65,14 @@ export const metadata: Metadata = {
       rel: "icon",
       type: "image/x-icon",
       url: "/favicon.ico",
+      sizes: "48x48",
       media: "(prefers-color-scheme: light)",
     },
     {
       rel: "icon",
       type: "image/x-icon",
       url: "/favicon-dark.ico",
+      sizes: "48x48",
       media: "(prefers-color-scheme: dark)",
     },
     {
