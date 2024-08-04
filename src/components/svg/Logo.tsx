@@ -1,3 +1,5 @@
+import { twMerge } from "tailwind-merge";
+
 type Props = Readonly<{
   className?: string;
   [prop: string]: any;
@@ -11,7 +13,7 @@ export default function Logo({ className, props }: Props) {
       version="1.1"
       id="svg1"
       xmlns="http://www.w3.org/2000/svg"
-      className={"w-16 " + className}
+      className={twMerge("w-16", className)}
       {...props}
     >
       <title id="title1">logo-db</title>
