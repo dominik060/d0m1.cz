@@ -16,7 +16,7 @@ export default function NavBar({ className, ...props }: Props) {
       </Link>
       <div className="flex flex-wrap items-center justify-end gap-6 sm:gap-8">
         <NavLinks
-          className="flex flex-nowrap gap-8 text-h4"
+          className="flex flex-nowrap gap-8 text-xl"
           navLinkList={[{ name: "Contact", href: "#contact" }]}
         />
         <ThemeSwitcher />
