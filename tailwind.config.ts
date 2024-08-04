@@ -23,14 +23,6 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
       },
-      fontSize: {
-        h1: "48px",
-        h2: "30px",
-        h3: "24px",
-        h4: "20px",
-        p: "16px",
-        hero: "72px",
-      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
