@@ -1,7 +1,5 @@
 import { twMerge } from "tailwind-merge";
 
-// → 'hover:bg-dark-red p-3 bg-[#B91C1C]'
-
 type Props = {
   className?: string;
   children: React.ReactNode;
