@@ -24,9 +24,9 @@ const config: Config = {
         sans: ["var(--font-geist-sans)"],
       },
       backgroundImage: {
-        "gradient-hero-dark":
+        "gradient-blue-dark":
           "linear-gradient(90deg, #FAFAFA 0%, #EBEBEB 26%, #3AB6FF 79%, #226BB8 100%)",
-        "gradient-hero-light":
+        "gradient-blue-light":
           "linear-gradient(90deg, #09090B 0%, #09090B 19%, #226BB8 59%, #3AB6FF 100%)",
       },
     },
