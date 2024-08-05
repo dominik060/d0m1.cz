@@ -43,7 +43,7 @@ export default function ContactCard({
       href={link}
       target="_blank"
       title="Open contact link"
-      className="card group/card before:bg-before-dark after:bg-after-dark relative rounded-lg bg-white/20 p-[2px] before:z-30 after:z-10 hover:before:opacity-100 group-hover/board:after:opacity-100"
+      className="card group/card before:bg-before-dark after:bg-after-dark relative rounded-lg bg-black/20 p-[2px] before:z-30 after:z-10 hover:before:opacity-100 group-hover/board:after:opacity-100 dark:bg-white/20"
     >
       <Card className="relative z-20 flex w-full flex-col items-center gap-8 bg-white pb-6 pt-8 dark:bg-black sm:min-w-52 sm:pb-16 md:min-w-72 lg:min-w-96 [&>*]:duration-500">
         <div className="bg- z-50 rounded-full border border-black border-opacity-40 bg-white p-4 group-hover/card:border-current dark:border-white dark:border-opacity-40 dark:bg-black">
