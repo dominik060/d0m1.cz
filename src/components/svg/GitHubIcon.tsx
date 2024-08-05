@@ -1,3 +1,5 @@
+"use client";
+
 export default function GitHubIcon({ className }: { className?: string }) {
   return (
     <svg
@@ -17,7 +19,7 @@ export default function GitHubIcon({ className }: { className?: string }) {
       />
       <path
         id="tail"
-        d="M12.0003 24.0002C5.98699 26.6668 5.33366 21.3335 2.66699 21.3335"
+        d="M11.1 24.0002C5.98699 26.6668 5.33366 21.3335 2.66699 21.3335"
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
