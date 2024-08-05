@@ -32,6 +32,10 @@ const config: Config = {
           "radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),   #fafafa60, transparent 40%)",
         "before-dark":
           "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),   #fafafa10, transparent 40%)",
+        "after-light":
+          "radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),   #09090B60, transparent 40%)",
+        "before-light":
+          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),   #09090B10, transparent 40%)",
       },
       keyframes: {
         wave: {
