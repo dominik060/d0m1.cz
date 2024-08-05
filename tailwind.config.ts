@@ -28,6 +28,10 @@ const config: Config = {
           "linear-gradient(90deg, #FAFAFA 0%, #EBEBEB 26%, #3AB6FF 79%, #226BB8 100%)",
         "gradient-blue-light":
           "linear-gradient(90deg, #09090B 0%, #09090B 19%, #226BB8 59%, #3AB6FF 100%)",
+        "after-dark":
+          "radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),   rgba(255, 255, 255, 0.6), transparent 40%)",
+        "before-dark":
+          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),   rgba(255, 255, 255, 0.06), transparent 40%)",
       },
       keyframes: {
         wave: {
