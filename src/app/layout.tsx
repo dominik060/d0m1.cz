@@ -4,60 +4,34 @@ import { GeistSans } from "geist/font/sans";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "./providers";
 import type { Viewport } from "next";
+import { meta, previewImage } from "./constants";
 
 export const metadata: Metadata = {
-  title: "Dominik Bartuška",
-  description: "Personal website of Dominik Bartuška",
-  metadataBase: new URL("https://d0m1.cz"),
-  creator: "Dominik Bartuška",
-  publisher: "Dominik Bartuška",
-  authors: [{ name: "Dominik Bartuška", url: "https://d0m1.cz" }],
+  title: meta.name,
+  description: meta.description,
+  metadataBase: new URL("https://" + meta.domain),
+  creator: meta.name,
+  publisher: meta.name,
+  authors: [{ name: meta.name, url: meta.domain }],
   generator: "Next.js",
   twitter: {
     card: "summary_large_image",
-    site: "https://d0m1.cz",
-    creator: "@DominikBartuska",
-    description: "Personal website of Dominik Bartuška",
-    title: "Dominik Bartuška",
-    images: [
-      {
-        url: "images/website-preview.png",
-        width: 1440,
-        height: 900,
-        alt: "Personal website of Dominik Bartuška",
-      },
-    ],
+    site: meta.domain,
+    creator: meta.twitter,
+    description: meta.description,
+    title: meta.name,
+    images: [previewImage],
   },
   openGraph: {
     title: "Dominik Bartuška",
-    description: "Personal website of Dominik Bartuška",
+    description: meta.description,
     siteName: "Dominik Bartuška",
-    url: "https://d0m1.cz",
-    images: [
-      {
-        url: "images/website-preview.png",
-        width: 1440,
-        height: 900,
-        alt: "Personal website of Dominik Bartuška",
-      },
-    ],
+    url: meta.domain,
+    images: [previewImage],
     type: "website",
     locale: "en_US",
   },
-  keywords: [
-    "dominik bartuska",
-    "Dominik Bartuška",
-    "code",
-    "web development",
-    "typescript",
-    "next.js",
-    "web dev",
-    "html",
-    "css",
-    "python",
-    "gym",
-    "muscle",
-  ],
+  keywords: meta.keywords,
   applicationName: "Dominik Bartuška's Website",
   referrer: "origin-when-cross-origin",
   icons: [
