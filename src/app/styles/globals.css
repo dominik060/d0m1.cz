@@ -35,11 +35,6 @@ body {
   }
 }
 
-:root {
-  --bg-color: rgb(20, 20, 20);
-  --card-color: rgb(23, 23, 23);
-}
-
 .card::before,
 .card::after {
   border-radius: inherit;
