@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Card from "../Card";
 import { Url } from "next/dist/shared/lib/router/router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect } from "react";
 import { MousePosition } from "@react-hook/mouse-position";
 
 type Props = {
