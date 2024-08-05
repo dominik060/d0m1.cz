@@ -11,7 +11,7 @@ export default function Home() {
           <Hero />
         </Header>
         <HrFullWidth />
-        <section id="contact">
+        <section id="aboutme">
           <AboutMe />
         </section>
       </div>
