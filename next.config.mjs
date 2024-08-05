@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  async rewrites() {
+  async redirects() {
     return [
       {
-        source: "/:path*",
+        source: "/:path(.{1,})",
         destination: "/",
+        permanent: true,
       },
     ];
   },
