@@ -29,9 +29,9 @@ const config: Config = {
         "gradient-blue-light":
           "linear-gradient(90deg, #09090B 0%, #09090B 19%, #226BB8 59%, #3AB6FF 100%)",
         "after-dark":
-          "radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),   rgba(255, 255, 255, 0.6), transparent 40%)",
+          "radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),   #fafafa60, transparent 40%)",
         "before-dark":
-          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),   rgba(255, 255, 255, 0.1), transparent 40%)",
+          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),   #fafafa10, transparent 40%)",
       },
       keyframes: {
         wave: {
