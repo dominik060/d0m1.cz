@@ -32,7 +32,7 @@ export default function ContactsCardBoard() {
     <div
       className="group/board flex flex-col flex-wrap justify-evenly gap-4 sm:grid sm:grid-cols-2 sm:gap-8 md:flex md:flex-row md:content-evenly"
       ref={boardRef}
-      id="cardsBoard"
+      id="contact"
     >
       {contactsList &&
         contactsList.map((contact) => (

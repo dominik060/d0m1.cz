@@ -22,7 +22,7 @@ export default function ContactCard({
   useEffect(() => {
     if (!mouse) return;
 
-    const cards = document.getElementById("cardsBoard")!;
+    const cards = document.getElementById("contact")!;
 
     cards.onmousemove = (e) => {
       for (const card of document.getElementsByClassName(
