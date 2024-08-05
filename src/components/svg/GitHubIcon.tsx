@@ -23,7 +23,7 @@ export default function GitHubIcon({ className }: { className?: string }) {
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        className="group-hover:animate-waving-tail origin-bottom-right"
+        className="group-hover/card:animate-waving-tail origin-bottom-right"
       />
     </svg>
   );
