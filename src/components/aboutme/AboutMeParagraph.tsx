@@ -5,7 +5,7 @@ export default function AboutMeParagraph({
 }) {
   return (
     <div className={className}>
-      <article className="flex flex-col gap-4 text-center text-base md:gap-8 md:text-xl">
+      <article className="flex flex-col gap-4 text-balance text-center text-base md:gap-8 md:text-xl">
         <p>
           I'm a student from Czechia with a love for all things tech and active!
           I enjoy creating websites, developing Android apps, and flying FPV
