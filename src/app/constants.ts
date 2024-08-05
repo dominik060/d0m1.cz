@@ -2,7 +2,8 @@ export const meta = {
   name: "Dominik Bartuška",
   twitter: "@DominikBartuska",
   domain: "d0m1.cz",
-  description: "Personal website of Dominik Bartuška",
+  description:
+    "I'm a student from the Czech Republic who loves tech and fitness. I create websites, develop Android apps, fly FPV drones, and capture moments with photography.",
   keywords: [
     "dominik bartuska",
     "Dominik Bartuška",
