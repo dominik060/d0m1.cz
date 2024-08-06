@@ -1,3 +1,5 @@
+"use client";
+
 export default function EmailIcon() {
   return (
     <svg
@@ -19,6 +21,7 @@ export default function EmailIcon() {
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
+        className="duration-700 ease-out group-hover/card:-translate-y-[0.15rem]"
       />
     </svg>
   );

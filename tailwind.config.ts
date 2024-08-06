@@ -8,8 +8,8 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      sm: { min: "515px" },
-      md: { min: "718px" },
+      sm: { min: "640px" },
+      md: { min: "760px" },
       lg: { min: "976px" },
       xl: { min: "1660px" },
       "hr-line": "80rem",
@@ -23,24 +23,34 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-geist-sans)"],
       },
-      fontSize: {
-        h1: "48px",
-        h2: "30px",
-        h3: "24px",
-        h4: "20px",
-        p: "16px",
-        hero: "72px",
-      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "gradient-apple":
-          "linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)",
-        "gradient-hero-dark":
+        "gradient-blue-dark":
           "linear-gradient(90deg, #FAFAFA 0%, #EBEBEB 26%, #3AB6FF 79%, #226BB8 100%)",
-        "gradient-hero-light":
+        "gradient-blue-light":
           "linear-gradient(90deg, #09090B 0%, #09090B 19%, #226BB8 59%, #3AB6FF 100%)",
+        "after-dark":
+          "radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),   #fafafa60, transparent 40%)",
+        "before-dark":
+          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),   #fafafa10, transparent 40%)",
+        "after-light":
+          "radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),   #09090B60, transparent 40%)",
+        "before-light":
+          "radial-gradient(800px circle at var(--mouse-x) var(--mouse-y),   #09090B10, transparent 40%)",
+      },
+      keyframes: {
+        wave: {
+          "0%": { transform: "rotate(0deg)" },
+          "10%": { transform: "rotate(2deg)" },
+          "20%": { transform: "rotate(-1deg)" },
+          "30%": { transform: "rotate(2deg)" },
+          "40%": { transform: "rotate(-1deg)" },
+          "50%": { transform: "rotate(1deg)" },
+          "60%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(0deg)" },
+        },
+      },
+      animation: {
+        "waving-tail": "wave 2s linear",
       },
     },
   },

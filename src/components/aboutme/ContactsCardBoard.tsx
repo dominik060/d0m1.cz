@@ -1,6 +1,10 @@
+"use client";
+
+import useMouse from "@react-hook/mouse-position";
 import EmailIcon from "../svg/EmailIcon";
 import GitHubIcon from "../svg/GitHubIcon";
 import ContactCard from "./ContactCard";
+import { useRef } from "react";
 
 const contactsList = [
   {
@@ -18,8 +22,18 @@ const contactsList = [
 ];
 
 export default function ContactsCardBoard() {
+  const boardRef = useRef(null);
+  const mouse = useMouse(boardRef, {
+    enterDelay: 100,
+    leaveDelay: 100,
+  });
+
   return (
-    <div className="flex flex-col flex-wrap justify-evenly gap-4 px-8 sm:grid sm:grid-cols-2 sm:gap-8 md:flex md:flex-row md:content-evenly">
+    <div
+      className="group/board flex flex-col flex-wrap justify-evenly gap-4 sm:grid sm:grid-cols-2 sm:gap-8 md:flex md:flex-row md:content-evenly"
+      ref={boardRef}
+      id="contact"
+    >
       {contactsList &&
         contactsList.map((contact) => (
           <ContactCard
@@ -28,6 +42,7 @@ export default function ContactsCardBoard() {
             description={contact.description}
             link={contact.link}
             key={contact.link}
+            mouse={mouse}
           />
         ))}
     </div>
