@@ -22,9 +22,3 @@ html {
     --secondary: #09090b;
   }
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
