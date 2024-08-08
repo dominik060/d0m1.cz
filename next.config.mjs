@@ -1,14 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/:path(.{1,})",
-        destination: "/",
-        permanent: true,
-      },
-    ];
-  },
-};
+// const nextConfig = {
+//   async redirects() {
+//     return [
+//       {
+//         source: "/:path(.{1,})",
+//         destination: "/",
+//         permanent: true,
+//       },
+//     ];
+//   },
+// };
 
-export default nextConfig;
+// export default nextConfig;
