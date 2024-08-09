@@ -33,7 +33,7 @@ export default function Hero() {
   }, [mouse]);
 
   return (
-    <div className="relative flex h-[80%] flex-col items-center justify-center text-center">
+    <div className="flex h-[80%] flex-col items-center justify-center text-center">
       <h1
         className="relative bg-gradient-blue-light bg-clip-text text-3xl font-black text-transparent dark:bg-gradient-blue-dark sm:text-5xl md:text-6xl"
         id="hero-text"
