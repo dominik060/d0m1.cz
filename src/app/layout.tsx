@@ -133,7 +133,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.variable} suppressHydrationWarning>
-      <body className={"flex justify-center"}>
+      <body className="flex justify-center">
         <Providers>
           {children}
           <SpeedInsights />

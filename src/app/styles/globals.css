@@ -5,32 +5,20 @@
 :root {
   --primary: #09090b;
   --secondary: #fafafa;
+  color-scheme: light dark;
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  @apply m-0 p-0;
 }
 
 html {
-  color-scheme: light dark;
-  scroll-behavior: smooth;
+  @apply scroll-smooth;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --primary: #fafafa;
     --secondary: #09090b;
-  }
-}
-
-body {
-  color: rgb(var(--primary));
-  background: var(--secondary);
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
   }
 }
