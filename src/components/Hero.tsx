@@ -33,9 +33,9 @@ export default function Hero() {
   }, [mouse]);
 
   return (
-    <div className="relative z-10 flex h-[80%] flex-col items-center justify-center text-center">
+    <div className="relative flex h-[80%] flex-col items-center justify-center text-center">
       <h1
-        className="relative z-30 bg-gradient-blue-light bg-clip-text text-3xl font-black text-transparent dark:bg-gradient-blue-dark sm:text-5xl md:text-6xl"
+        className="relative bg-gradient-blue-light bg-clip-text text-3xl font-black text-transparent dark:bg-gradient-blue-dark sm:text-5xl md:text-6xl"
         id="hero-text"
         ref={ref}
       >
@@ -43,7 +43,7 @@ export default function Hero() {
         <br />
         Digital Landscape.
         <div
-          className="bg-radial-dark absolute left-0 top-0 z-40 h-[800px] w-[800px] overflow-visible opacity-0 duration-100"
+          className="bg-radial-dark absolute left-0 top-0 h-[800px] w-[800px] opacity-0 duration-100"
           id="bubble"
         ></div>
       </h1>
