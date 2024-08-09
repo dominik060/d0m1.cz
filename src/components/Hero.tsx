@@ -43,7 +43,7 @@ export default function Hero() {
         <br />
         Digital Landscape.
         <div
-          className="bg-radial-dark absolute left-0 top-0 h-[800px] w-[800px] opacity-0 duration-100"
+          className="bg-radial-dark absolute left-0 top-0 h-[800px] w-[800px] opacity-0 duration-200"
           id="bubble"
         ></div>
       </h1>
