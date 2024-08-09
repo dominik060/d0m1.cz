@@ -21,17 +21,21 @@ export default function Hero() {
         x = mouse.x!,
         y = mouse.y!;
 
-      if (0 > x || x > rect.width || 0 > y || y > rect.height) return;
+      if (0 > x || x > rect.width || 0 > y || y > rect.height) {
+        bubble.style.opacity = "0";
+        return;
+      }
 
       bubble.style.left = `${mouse.x! - bubble.clientWidth / 2}px`;
       bubble.style.top = `${mouse.y! - bubble.clientHeight / 2}px`;
+      bubble.style.opacity = "1";
     };
   }, [mouse]);
 
   return (
     <div className="relative z-10 flex h-[80%] flex-col items-center justify-center text-center">
       <h1
-        className="group/hero relative z-30 bg-gradient-blue-light bg-clip-text text-3xl font-black text-transparent dark:bg-gradient-blue-dark sm:text-5xl md:text-6xl"
+        className="relative z-30 bg-gradient-blue-light bg-clip-text text-3xl font-black text-transparent dark:bg-gradient-blue-dark sm:text-5xl md:text-6xl"
         id="hero-text"
         ref={ref}
       >
@@ -39,7 +43,7 @@ export default function Hero() {
         <br />
         Digital Landscape.
         <div
-          className="bg-radial-dark absolute left-0 top-0 z-40 h-[800px] w-[800px] overflow-visible opacity-0 duration-100 group-hover/hero:opacity-100"
+          className="bg-radial-dark absolute left-0 top-0 z-40 h-[800px] w-[800px] overflow-visible opacity-0 duration-100"
           id="bubble"
         ></div>
       </h1>
