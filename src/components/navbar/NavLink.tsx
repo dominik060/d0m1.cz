@@ -29,7 +29,10 @@ export default function NavLinks({ navLinkList, className }: Props) {
         <NavigationMenuItem>
           <Link key={href} href={href} title={"Move to " + href}>
             <NavigationMenuLink
-              className={twMerge(navigationMenuTriggerStyle(), "text-xl")}
+              className={twMerge(
+                navigationMenuTriggerStyle(),
+                "text-xl hover:underline"
+              )}
             >
               {name}
             </NavigationMenuLink>
