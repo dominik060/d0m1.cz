@@ -1,6 +1,17 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "../ui/button";
-
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu";
+import { twMerge } from "tailwind-merge";
 interface navLinkItem {
   name: string;
   href: string;
@@ -13,14 +24,18 @@ type Props = {
 export default function NavLinks({ navLinkList, className }: Props) {
   if (!navLinkList) return;
   return (
-    <div className={className}>
+    <NavigationMenuList className={className}>
       {navLinkList.map(({ name, href }) => (
-        <Link key={href} href={href} title={"Move to " + href}>
-          <Button variant={"ghost"} className="text-xl">
-            {name}
-          </Button>
-        </Link>
+        <NavigationMenuItem>
+          <Link key={href} href={href} title={"Move to " + href}>
+            <NavigationMenuLink
+              className={twMerge(navigationMenuTriggerStyle(), "text-xl")}
+            >
+              {name}
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
       ))}
-    </div>
+    </NavigationMenuList>
   );
 }
