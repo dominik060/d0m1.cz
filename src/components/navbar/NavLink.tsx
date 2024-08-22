@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 interface navLinkItem {
   name: string;
@@ -15,7 +16,9 @@ export default function NavLinks({ navLinkList, className }: Props) {
     <div className={className}>
       {navLinkList.map(({ name, href }) => (
         <Link key={href} href={href} title={"Move to " + href}>
-          {name}
+          <Button variant={"ghost"} className="text-xl">
+            {name}
+          </Button>
         </Link>
       ))}
     </div>
