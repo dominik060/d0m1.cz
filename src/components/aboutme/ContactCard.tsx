@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Card from "../Card";
 import { Url } from "next/dist/shared/lib/router/router";
 import { useEffect } from "react";
 import { MousePosition } from "@react-hook/mouse-position";
+import { Card } from "../ui/card";
 
 type Props = {
   Icon: React.ReactElement;
