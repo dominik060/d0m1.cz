@@ -8,8 +8,39 @@ import {
   ContextMenuTrigger,
 } from "@/components/ui/context-menu";
 import { Button } from "../ui/button";
+import { redirect } from "next/navigation";
 
 export default function Logo({ className }: { className?: string }) {
+  const logoString = `<svg
+  data-logo-component
+  viewBox="0 0 100 100"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <title id="title1">Dominik Bartuška's logo</title>
+  <g id="layer1" fill="currentColor">
+    <path
+      id="path11"
+      d="M 70,0 V 29.999717 H 99.999726 A 30,30 0 0 0 70,0 Z"
+    />
+    <rect id="rect11" width="30" height="30" x="35" y="0" />
+    <path
+      id="path1"
+      d="M 29.999726,0 V 29.999717 H 0 A 30,30 0 0 1 29.999726,0 Z"
+    />
+    <rect id="rect1" width="30" height="30" x="35" y="70" />
+    <rect id="rect2" width="30" height="30" x="35" y="35" />
+    <path
+      id="path2"
+      d="M 70,64.999717 V 35 H 99.999726 A 30,30 0 0 1 70,64.999717 Z"
+    />
+    <path
+      id="path3"
+      d="M 29.999726,64.999717 V 35 H 0 a 30,30 0 0 0 29.999726,29.999717 z"
+    />
+  </g>
+</svg>
+`;
   return (
     <ContextMenu>
       <ContextMenuTrigger>
@@ -18,7 +49,12 @@ export default function Logo({ className }: { className?: string }) {
         </Button>
       </ContextMenuTrigger>
       <ContextMenuContent className="w-64">
-        <ContextMenuItem inset>Copy svg</ContextMenuItem>
+        <ContextMenuItem
+          inset
+          onClick={() => navigator.clipboard.writeText(logoString)}
+        >
+          Copy svg
+        </ContextMenuItem>
         <ContextMenuItem inset>Download svg</ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>
