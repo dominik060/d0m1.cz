@@ -1,11 +1,31 @@
+"use client";
+
 import { twMerge } from "tailwind-merge";
+import {
+  ContextMenu,
+  ContextMenuContent,
+  ContextMenuItem,
+  ContextMenuTrigger,
+} from "@/components/ui/context-menu";
+import { Button } from "../ui/button";
 
-type Props = Readonly<{
-  className?: string;
-  [prop: string]: any;
-}>;
+export default function Logo({ className }: { className?: string }) {
+  return (
+    <ContextMenu>
+      <ContextMenuTrigger>
+        <Button variant="ghost" className="m-0 h-full w-full">
+          <LogoSvg className={className} />
+        </Button>
+      </ContextMenuTrigger>
+      <ContextMenuContent className="w-64">
+        <ContextMenuItem inset>Copy svg</ContextMenuItem>
+        <ContextMenuItem inset>Download svg</ContextMenuItem>
+      </ContextMenuContent>
+    </ContextMenu>
+  );
+}
 
-export default function Logo({ className, props }: Props) {
+export function LogoSvg({ className }: { className?: string }) {
   return (
     <svg
       data-logo-component
@@ -14,7 +34,6 @@ export default function Logo({ className, props }: Props) {
       id="svg1"
       xmlns="http://www.w3.org/2000/svg"
       className={twMerge("w-16", className)}
-      {...props}
     >
       <title id="title1">logo-db</title>
 
