@@ -8,11 +8,10 @@ import {
   ContextMenuTrigger,
 } from "@/components/ui/context-menu";
 import { Button } from "../ui/button";
-import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export default function Logo({ className }: { className?: string }) {
   const logoString = `<svg
-  data-logo-component
   viewBox="0 0 100 100"
   version="1.1"
   xmlns="http://www.w3.org/2000/svg"
@@ -41,6 +40,7 @@ export default function Logo({ className }: { className?: string }) {
   </g>
 </svg>
 `;
+
   return (
     <ContextMenu>
       <ContextMenuTrigger>
@@ -53,9 +53,13 @@ export default function Logo({ className }: { className?: string }) {
           inset
           onClick={() => navigator.clipboard.writeText(logoString)}
         >
-          Copy svg
+          Copy SVG
         </ContextMenuItem>
-        <ContextMenuItem inset>Download svg</ContextMenuItem>
+        <ContextMenuItem inset asChild>
+          <Link href="/logo.svg" title="Download svg">
+            Download SVG
+          </Link>
+        </ContextMenuItem>
       </ContextMenuContent>
     </ContextMenu>
   );
