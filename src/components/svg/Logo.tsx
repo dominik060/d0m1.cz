@@ -52,10 +52,11 @@ export default function Logo({ className }: { className?: string }) {
         <ContextMenuItem
           inset
           onClick={() => navigator.clipboard.writeText(logoString)}
+          key="copySVG"
         >
           Copy SVG
         </ContextMenuItem>
-        <ContextMenuItem inset asChild>
+        <ContextMenuItem inset asChild key="downloadSVG">
           <Link href="/logo.svg" title="Download svg">
             Download SVG
           </Link>
