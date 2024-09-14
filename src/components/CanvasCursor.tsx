@@ -1,6 +1,6 @@
 "use client";
 
-import useCanvasCursor from "@/utils/canvasCursor";
+import useCanvasCursor from "@/utils/useCanvasCursor";
 
 const CanvasCursor = () => {
   useCanvasCursor();
