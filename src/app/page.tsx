@@ -1,4 +1,5 @@
 import AboutMe from "@/components/aboutme/AboutMe";
+import Footer from "@/components/aboutme/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HrFullWidth from "@/components/HrFullWidth";
@@ -14,6 +15,7 @@ export default function Home() {
         <section id="aboutme">
           <AboutMe />
         </section>
+        <Footer />
       </div>
     </main>
   );
