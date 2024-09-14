@@ -1,5 +1,5 @@
 import AboutMe from "@/components/aboutme/AboutMe";
-import Footer from "@/components/aboutme/Footer";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import HrFullWidth from "@/components/HrFullWidth";
