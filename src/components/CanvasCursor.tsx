@@ -10,3 +10,5 @@ const CanvasCursor = () => {
   );
 };
 export default CanvasCursor;
+
+// 🚀 Thank https://www.edilozi.pro/docs/components/canvas-cursor for the code!
