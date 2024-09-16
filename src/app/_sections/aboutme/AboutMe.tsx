@@ -1,6 +1,6 @@
 import AboutMeParagraph from "./AboutMeParagraph";
 import AboutMeTitle from "./AboutMeTitle";
-import ContactsCardBoard from "./ContactsCardBoard";
+import ContactsCardBoard from "../contacts/ContactsCardBoard";
 
 export default function AboutMe() {
   return (

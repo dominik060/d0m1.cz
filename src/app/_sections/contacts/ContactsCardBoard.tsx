@@ -1,8 +1,8 @@
 "use client";
 
 import useMouse from "@react-hook/mouse-position";
-import EmailIcon from "../svg/EmailIcon";
-import GitHubIcon from "../svg/GitHubIcon";
+import EmailIcon from "../../../components/svg/EmailIcon";
+import GitHubIcon from "../../../components/svg/GitHubIcon";
 import ContactCard from "./ContactCard";
 import { useRef } from "react";
 
