@@ -2,7 +2,6 @@
 
 import useMouse, { MousePosition } from "@react-hook/mouse-position";
 import { useEffect, useRef } from "react";
-import WordFadeIn from "./magicui/word-fade-in";
 
 export default function Hero() {
   const ref = useRef(null);
@@ -40,9 +39,9 @@ export default function Hero() {
         id="hero-text"
         ref={ref}
       >
-        <WordFadeIn words="Forming Tomorrow's" />
+        Forming Tomorrow's
         <br />
-        <WordFadeIn words="Digital Landscape." />
+        Digital Landscape.
         <div
           className="absolute left-0 top-0 h-[600px] w-[800px] bg-radial-light opacity-0 duration-200 dark:bg-radial-dark"
           id="bubble"
