@@ -7,8 +7,9 @@ import {
   ContextMenuItem,
   ContextMenuTrigger,
 } from "@/components/ui/context-menu";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { CoolMode } from "@/components/magicui/cool-mode";
 
 export default function Logo({ className }: { className?: string }) {
   const logoString = `<svg
@@ -44,9 +45,11 @@ export default function Logo({ className }: { className?: string }) {
   return (
     <ContextMenu>
       <ContextMenuTrigger>
-        <Button variant="ghost" className="m-0 h-full w-full">
-          <LogoSvg className={className} />
-        </Button>
+        <CoolMode>
+          <Button variant="ghost" className="m-0 h-full w-full">
+            <LogoSvg className={className} />
+          </Button>
+        </CoolMode>
       </ContextMenuTrigger>
       <ContextMenuContent className="w-64">
         <ContextMenuItem
