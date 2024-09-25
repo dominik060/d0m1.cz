@@ -2,7 +2,6 @@ import Link from "next/link";
 import Logo from "../svg/Logo";
 import NavLinks from "./NavLink";
 import ThemeSwitcher from "./themeswitcher/ThemeSwitcher";
-import { Button } from "../ui/button";
 import { NavigationMenu } from "@/components/ui/navigation-menu";
 
 export default function NavBar() {
