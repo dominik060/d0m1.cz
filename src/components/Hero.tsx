@@ -33,7 +33,7 @@ export default function Hero() {
   }, [mouse]);
 
   return (
-    <div className="flex h-[80%] flex-col items-center justify-center text-center">
+    <div className="animate-appear flex h-[80%] flex-col items-center justify-center text-center duration-1000">
       <h1
         className="relative bg-gradient-blue-light bg-clip-text text-3xl font-black text-transparent dark:bg-gradient-blue-dark sm:text-5xl md:text-6xl"
         id="hero-text"
@@ -43,7 +43,7 @@ export default function Hero() {
         <br />
         Digital Landscape.
         <div
-          className="dark:bg-radial-dark bg-radial-light absolute left-0 top-0 h-[600px] w-[800px] opacity-0 duration-200"
+          className="absolute left-0 top-0 h-[600px] w-[800px] bg-radial-light opacity-0 duration-200 dark:bg-radial-dark"
           id="bubble"
         ></div>
       </h1>

@@ -10,8 +10,8 @@ type Props = {
 export default function Header({ className, children, ...props }: Props) {
   return (
     <header {...props} className={className}>
-      <NavBar />
-      <HrFullWidth />
+      <NavBar className="animate-move-from-top" />
+      <HrFullWidth className="animate-appear" />
       {children}
     </header>
   );
