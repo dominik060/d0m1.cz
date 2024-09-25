@@ -33,7 +33,7 @@ export default function Hero() {
   }, [mouse]);
 
   return (
-    <div className="flex h-[80%] flex-col items-center justify-center text-center duration-200 animate-in">
+    <div className="animate-appear flex h-[80%] flex-col items-center justify-center text-center duration-1000">
       <h1
         className="relative bg-gradient-blue-light bg-clip-text text-3xl font-black text-transparent dark:bg-gradient-blue-dark sm:text-5xl md:text-6xl"
         id="hero-text"
