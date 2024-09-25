@@ -3,10 +3,16 @@ import Logo from "../svg/Logo";
 import NavLinks from "./NavLink";
 import ThemeSwitcher from "./themeswitcher/ThemeSwitcher";
 import { NavigationMenu } from "@/components/ui/navigation-menu";
+import { twMerge } from "tailwind-merge";
 
-export default function NavBar() {
+export default function NavBar({ className }: { className?: string }) {
   return (
-    <NavigationMenu className="flex max-w-full items-center justify-between py-4 sm:py-8">
+    <NavigationMenu
+      className={twMerge(
+        "flex max-w-full items-center justify-between py-4 sm:py-8",
+        className
+      )}
+    >
       <Link href="/" title="Go to home page" className="">
         <Logo className="w-10 sm:w-14" aria-hidden="true" />
       </Link>
