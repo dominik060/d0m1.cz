@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Providers } from "./providers";
 import type { Viewport } from "next";
 import { myMetadata } from "./metadata";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = myMetadata;
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <Providers>
           {children}
           <SpeedInsights />
+          <Analytics />
         </Providers>
       </body>
     </html>
