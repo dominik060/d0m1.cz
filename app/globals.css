@@ -1,26 +1,109 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f2f2f2;
+  --foreground: #131312;
+  --card: #ededed;
+  --card-foreground: #131312;
+  --popover: #ededed;
+  --popover-foreground: #131312;
+  --primary: #3283c7;
+  --primary-foreground: #f2f2f2;
+  --secondary: #76d6e1;
+  --secondary-foreground: #131312;
+  --muted: #b1b0b0;
+  --muted-foreground: #131312;
+  --accent: #3283c7;
+  --accent-foreground: #f2f2f2;
+  --destructive: #febf07;
+  --destructive-foreground: #131312;
+  --border: #b1b0b0;
+  --input: #ededed;
+  --ring: #3283c7;
+  --radius: 0rem;
+}
+
+.dark {
+  --background: #010101;
+  --foreground: #f2f2f2;
+  --card: #131312;
+  --card-foreground: #f2f2f2;
+  --popover: #131312;
+  --popover-foreground: #f2f2f2;
+  --primary: #64c632;
+  --primary-foreground: #010101;
+  --secondary: #aed475;
+  --secondary-foreground: #010101;
+  --muted: #b1b0b0;
+  --muted-foreground: #f2f2f2;
+  --accent: #64c632;
+  --accent-foreground: #010101;
+  --destructive: #febf07;
+  --destructive-foreground: #010101;
+  --border: #131312;
+  --input: #131312;
+  --ring: #64c632;
+  --radius: 0rem;
 }
 
 @theme inline {
+  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Only enable the reserved scrollbar gutter when on blog pages.
+   The `blog-scroll` class is added to the html element by the
+   client `app/blog/layout.tsx` component. This avoids showing the
+   scrollbar on the landing page while preserving layout on blog pages. */
+html.blog-scroll {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
 }
