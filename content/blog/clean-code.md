@@ -1,6 +1,6 @@
 ---
 title: The Art of Clean Code
-date: 2025-10-10
+date: 2025-10-26
 slug: clean-code
 ---
 
@@ -29,5 +29,9 @@ function doubleValue(value) {
   return value * 2;
 }
 ```
+
+Here is a little meme about it:
+
+![A meme about clean code|max-width=80%](/blog/clean-code-meme.webp)
 
 Small improvements compound over time.
