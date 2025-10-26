@@ -8,8 +8,6 @@ export const revalidate = 3600;
 export default function BlogPage() {
   const posts = getAllPosts();
 
-  
-
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const year = date.getFullYear();
@@ -47,7 +45,7 @@ export default function BlogPage() {
         {posts.map((post) => (
           <article key={post.slug}>
             <Link href={`/blog/${post.slug}`} className="block group">
-              <div className="flex flex-col md:flex-row md:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <div className="flex flex-col md:flex-row md:items-baseline sm:justify-between gap-0.5 sm:gap-1.5">
                 <h2
                   className="group-hover:text-accent transition-colors"
                   style={{ fontFamily: "var(--font-mono)" }}

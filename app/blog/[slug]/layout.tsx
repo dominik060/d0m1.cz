@@ -7,9 +7,5 @@ export default function BlogPostLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <main className="w-full flex flex-col items-center min-h-screen">
-      {children}
-    </main>
-  );
+  return <main className="w-full flex flex-col items-center ">{children}</main>;
 }
