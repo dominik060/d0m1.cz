@@ -27,6 +27,25 @@ export function MarkdownRenderer({ content }: MarkdownRendererProps) {
   // Inline code
   html = html.replace(/`([^`]+)`/gim, "<code>$1</code>");
 
+  // Supports: ![alt text](/image.webp) or ![alt text|width=400px](/image.webp)
+  html = html.replace(
+    /!\[([^\]|]*?)(?:\|([^\]]*?))?\]\(([^)]+)\)/gm,
+    (match, alt, sizing, src) => {
+      let style = "";
+      if (sizing) {
+        const pairs = sizing.match(/(\w+)=([^\s]+)/g) || [];
+        const cssProps = pairs
+          .map((pair: string) => {
+            const [key, val] = pair.split("=");
+            return `${key}:${val}`;
+          })
+          .join(";");
+        if (cssProps) style = ` style="${cssProps}"`;
+      }
+      return `<div class="flex justify-center my-4"><img src="${src}" alt="${alt.trim()}" class="max-w-full h-auto rounded-lg"${style} /></div>`;
+    }
+  );
+
   // Links
   html = html.replace(
     /\[([^\]]+)\]\(([^)]+)\)/gim,
