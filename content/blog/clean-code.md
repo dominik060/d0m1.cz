@@ -4,7 +4,7 @@ date: 2025-10-10
 slug: clean-code
 ---
 
-# The Art of Clean Code
+# **Dummy text**
 
 Clean code is code that's easy to read, understand, and modify. It's not about being clever—it's about being clear.
 
