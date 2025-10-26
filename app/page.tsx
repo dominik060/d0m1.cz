@@ -18,6 +18,8 @@ export default function Home() {
           <Link
             href="mailto:your.info@d0m1.cz"
             className="hover:text-accent  flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Mail className="w-4 h-4" />
             <span>email</span>
@@ -26,6 +28,8 @@ export default function Home() {
           <Link
             href="https://github.com/dominik060"
             className="hover:text-accent  flex items-center gap-2"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Github className="w-4 h-4" />
             <span>github</span>
