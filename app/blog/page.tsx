@@ -48,10 +48,7 @@ export default function BlogPage() {
               <div className="flex flex-col md:flex-row md:items-baseline sm:justify-between gap-0.5 sm:gap-1.5">
                 <h2
                   className="group-hover:text-accent transition-colors"
-                  style={{
-                    fontFamily: "var(--font-mono)",
-                    viewTransitionName: `blog-title-${post.slug}`,
-                  }}
+                  style={{ viewTransitionName: `blog-title-${post.slug}` }}
                 >
                   {post.title}
                 </h2>
@@ -59,7 +56,6 @@ export default function BlogPage() {
                 <time
                   dateTime={post.date}
                   className="opacity-50 whitespace-nowrap text-sm"
-                  style={{ fontFamily: "var(--font-mono)" }}
                 >
                   {formatDate(post.date)}
                 </time>
