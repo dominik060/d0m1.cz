@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Mail, Github } from "lucide-react";
+import { Mail, Github, ArrowLeft } from "lucide-react";
 
 export default function Home() {
   return (
@@ -35,8 +35,12 @@ export default function Home() {
             <span>github</span>
           </Link>
 
-          <Link href="/blog" className="hover:text-accent hover:underline">
-            blog →
+          <Link
+            href="/blog"
+            className="hover:text-accent inline-flex items-center gap-2"
+          >
+            <span>blog</span>
+            <ArrowLeft className="w-4 h-4 rotate-180 transition" />
           </Link>
         </div>
       </div>
