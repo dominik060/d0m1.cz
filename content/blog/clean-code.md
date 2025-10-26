@@ -16,6 +16,20 @@ Clean code is code that's easy to read, understand, and modify. It's not about b
 
 **Names should reveal intent** - Good names make comments unnecessary.
 
+### 3rd heading
+
+sdsd
+
+- lol
+
+`inline code, nice huh?`
+
+sdds
+
+#### and the 4th
+
+- yes i like this
+
 ## In Practice
 
 ```javascript
@@ -32,6 +46,6 @@ function doubleValue(value) {
 
 Here is a little meme about it:
 
-![A meme about clean code|max-width=80%](/blog/clean-code-meme.webp)
+![A meme about clean code|width=300px](/blog/clean-code-meme.webp)
 
 Small improvements compound over time.
