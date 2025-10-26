@@ -35,7 +35,7 @@ export default function BlogPage() {
       <Link
         href={"/"}
         className="inline-flex items-center gap-2 mb-8 hover:text-accent transition-colors opacity-60 hover:opacity-100"
-        style={{ fontFamily: "var(--font-mono)" }}
+        style={{ viewTransitionName: "blog-arrow" }}
       >
         <ArrowLeft className="w-4 h-4" />
         back
@@ -48,7 +48,10 @@ export default function BlogPage() {
               <div className="flex flex-col md:flex-row md:items-baseline sm:justify-between gap-0.5 sm:gap-1.5">
                 <h2
                   className="group-hover:text-accent transition-colors"
-                  style={{ fontFamily: "var(--font-mono)" }}
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    viewTransitionName: `blog-title-${post.slug}`,
+                  }}
                 >
                   {post.title}
                 </h2>

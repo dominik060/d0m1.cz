@@ -43,7 +43,10 @@ export default async function BlogPostView({
       <Link
         href={"/blog"}
         className="inline-flex items-center gap-2 mb-8 hover:text-accent transition-colors opacity-60 hover:opacity-100"
-        style={{ fontFamily: "var(--font-mono)" }}
+        style={{
+          fontFamily: "var(--font-mono)",
+          viewTransitionName: "blog-arrow",
+        }}
       >
         <ArrowLeft className="w-4 h-4" />
         back
@@ -52,7 +55,10 @@ export default async function BlogPostView({
       <article className="space-y-6 w-full">
         <header className="space-y-2 mb-8">
           <h1
-            style={{ fontFamily: "var(--font-mono)" }}
+            style={{
+              fontFamily: "var(--font-mono)",
+              viewTransitionName: `blog-title-${post.slug}`,
+            }}
             className="text-2xl sm:text-3xl"
           >
             {post.title}
@@ -60,7 +66,10 @@ export default async function BlogPostView({
           <time
             dateTime={post.date}
             className="opacity-50 text-sm block"
-            style={{ fontFamily: "var(--font-mono)" }}
+            style={{
+              fontFamily: "var(--font-mono)",
+              viewTransitionName: `blog-date-${post.slug}`,
+            }}
           >
             {formatDate(post.date)}
           </time>

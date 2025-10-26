@@ -38,6 +38,7 @@ export default function Home() {
           <Link
             href="/blog"
             className="hover:text-accent inline-flex items-center gap-2"
+            style={{ viewTransitionName: "blog-arrow" }}
           >
             <span>blog</span>
             <ArrowLeft className="w-4 h-4 rotate-180 transition" />
