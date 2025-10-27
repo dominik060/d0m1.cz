@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className="flex items-center gap-6">
           <Link
-            href="mailto:your.info@d0m1.cz"
+            href="mailto:info@d0m1.cz"
             className="hover:text-accent  flex items-center gap-2"
             target="_blank"
             rel="noopener noreferrer"
